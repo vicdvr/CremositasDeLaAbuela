@@ -1,0 +1,53 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+//generación de tamaños de texto
+@for $i from 1 through 5{
+    .text-#{$i}{
+        font-size: 1em*$i;
+    }
+}
+
+//colores que hacen parte de la paleta de colores escogida de momento
+$colors:(
+    bg-nav:rgb(4,196,217),
+    bg-footer:rgb(3, 140, 140),
+    bg-negro:black,
+    bg-blanco:white,
+    bg-rojo:rgb(242,90,56),
+    bg-naranja:rgb(242,129,87),
+    bg-piel:rgb(242,198,160),
+    bg-amarillo:rgb(242,177,56)
+);
+//generación de las clases para la aplicación de los colores como fondos
+@each $color-name, $color in $colors{
+    .color-#{$color-name}{
+        background-color: $color;
+    }
+}
+//colores para texto
+$colors-text:(
+    texto-azul:rgb(4,196,217),
+    texto-blanco:white,
+    texto-rojo:red
+);
+@each $color-name, $color in $colors-text{
+    .color-#{$color-name}{
+        color: $color;
+    }
+}
+//Tamaños
+$w-10:10%;
+$w-20:20%;
+$w-30:30%;
+$w-40:40%;
+$w-50:50%;
+$w-60:60%;
+$w-70:70%;
+$w-80:80%;
+$w-90:90%;
+$w-100:100%;
+
+$w-icono-nav:80px;
+$w-icono-foot:60px;

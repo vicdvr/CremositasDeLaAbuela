@@ -1,0 +1,17 @@
+{
+  "name": "cremositas_de_la_abuela_valencia_rios",
+  "version": "1.0.0",
+  "description": "proyecto del sitio web para las cremositas de la abuela",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/main.scss css/main.css",
+		"watch-css": "nodemon -e scss -x \"npm     run build-css\""
+  },
+  "author": "Victor Valencia",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^7.0.0",
+    "nodemon": "^2.0.15"
+  }
+}

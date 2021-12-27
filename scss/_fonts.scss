@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Convergence&display=swap');
+$main-font:'Convergence', sans-serif;
+html{
+	font-family: $main-font;
+}
+//Tamaños de letra
+$titulo-principal:3.5em;
+$titulo-secundario:2.5em;
+$texto-general:1.5em;
